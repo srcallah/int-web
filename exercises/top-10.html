@@ -15,16 +15,16 @@
       <li>
         single-serving websites
         <form action="/action_page.php">
-          <label for="sites">choose a website!</label>
+          <label for="sites">a few examples:</label>
           <select name="sites" id="sites">
-            <option value="donothing">donothingfor2minutes.com</option>
+            <option value="http://donothingfor2mintues.com">donothingfor2minutes.com</option>
             <option value="redblue">sometimesredsometimesblue.com</option>
             <option value="olia">If You Want to Clean Your Screen, Olia Lialina, 1996</option>
             <option value="wishingwell">Wishing Well, Jonas Lund</option>
             <option value="colorflip">colorflip.com</option>
           </select>
           <br><br>
-        <input type="submit" value="Submit">
+        <input class="SubmitButton" type="submit" name="SUBMITBUTTON" value="Submit" style="font-size:20px; "/>
         </form>
       </li>
       <!-- #2 -->
@@ -55,5 +55,20 @@
         Walking on piles of shells on Savin Beach
       </li>
     </ol>
+    <script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script>
+        $('#link').on('submit', function (e) {
+            e.preventDefault();
+            var $form = $(this),
+                    $select = $form.find('select'),
+                    links = $select.val();
+            if (links.length > 0) {
+                for (i in links) {
+                    link = links[i];
+                    window.open(link);
+                }
+            }
+        });
+    </script>
   </body>
 </html>
