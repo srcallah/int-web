@@ -13,19 +13,13 @@
     <ol>
       <!-- #1 -->
       <li>
-        single-serving websites
-        <form action="/action_page.php">
-          <label for="sites">a few examples:</label>
-          <select name="sites" id="sites">
-            <option value="http://donothingfor2mintues.com">donothingfor2minutes.com</option>
-            <option value="redblue">sometimesredsometimesblue.com</option>
-            <option value="olia">If You Want to Clean Your Screen, Olia Lialina, 1996</option>
-            <option value="wishingwell">Wishing Well, Jonas Lund</option>
-            <option value="colorflip">colorflip.com</option>
-          </select>
-          <br><br>
-        <input class="SubmitButton" type="submit" name="SUBMITBUTTON" value="Submit" style="font-size:20px; "/>
-        </form>
+        <strong>single-serving websites</strong>
+        <li>
+          <li><a href="https://donothingfortwomintues.com" target="_blank">donothingfortwominutes.com</a></li>
+          <li><a href="http://sometimesredsometimesblue.com" target="blank">sometimesredsometimesblue.com</a></li>
+          <li><a href="http://www.entropy8zuper.org/possession/olialia/olialia.htm" target="_blank">If You Want to Clean Your Screen, Olia Lialina, 1996</a></li>
+          <li><a href="https://jonaslund.com/works/wishing-well-biz/" target="_blank">Wishing Well, Jonas Lund</a></li>
+          <li><a href="http://colorflip.com" target="_blank">colorflip.com</a></li>
       </li>
       <!-- #2 -->
       <li>
@@ -55,20 +49,6 @@
         Walking on piles of shells on Savin Beach
       </li>
     </ol>
-    <script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script>
-        $('#link').on('submit', function (e) {
-            e.preventDefault();
-            var $form = $(this),
-                    $select = $form.find('select'),
-                    links = $select.val();
-            if (links.length > 0) {
-                for (i in links) {
-                    link = links[i];
-                    window.open(link);
-                }
-            }
-        });
-    </script>
+
   </body>
 </html>
