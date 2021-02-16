@@ -1,0 +1,33 @@
+body{
+  margin: 3em;
+  background: rgb(194,0,255);
+  background: linear-gradient(0deg, rgba(194,0,255,0.4164040616246498) 0%, rgba(9,9,121,0) 35%, rgba(255,255,255,1) 100%);
+  font-family: monospace;
+}
+
+h1{
+  font-size: 1.75rem;
+  margin: .25rem;
+  padding-top: 3rem;
+}
+
+li{
+  margin: 1.25rem;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  color: rgba(194,0,255);
+}
+
+div{
+  padding: 2.5rem;
+}
+
+#back{
+  position: fixed;
+  top: 1rem;
+}
