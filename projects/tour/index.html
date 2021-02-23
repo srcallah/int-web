@@ -5,17 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>A tour of Savin Rock Trail</title>
     <link rel="icon" type="image/png" href="images/icon.png"/>
+    <link rel="stylesheet" href="css/masterstyles.css">
   </head>
   <body>
-    
-    <h1>Savin Rock Trail</h1>
-    <img src="img/home_bg.png">
-    <button><a href="subs/1.html">Begin</a></button>
 
-    <audio controls autoplay muted>
-      <source src="audio/beach.ogg" type="audio/ogg">
-      <source src="audio/beach.mp3" type="audio/mpeg">
-    </audio>
 
+    <div class="begin">
+      <h1>Savin Rock Trail</h1>
+      <button id="myBtn" onclick="myFunction()">&#9654;</button>
+      <div class="video-container">
+        <video autoplay unmuted loop id="myVideo">
+          <source src="video/IMG_5681.mov" type="video/mp4">
+        </video>
+      </div>
+      <div>
+        <a href="subs/1.html" class="button">Begin</a>
+      </div>
+    </div>
+
+    <script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+
+    // Get the button
+    var btn = document.getElementById("myBtn");
+
+    // Pause and play the video, and change the button text
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "	&#9654;";
+      } else {
+        video.pause();
+        btn.innerHTML = "	&#9208;";
+      }
+    }
+    </script>
   </body>
 </html>
