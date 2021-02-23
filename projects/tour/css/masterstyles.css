@@ -1,0 +1,81 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  display: block;
+  margin: .5rem;
+  font-family: monospace;
+  color: black;
+}
+
+div{
+  background-color: white;
+}
+
+
+h1{
+  font-family: serif;
+  font-weight: 200;
+}
+
+a{
+  color: black;
+  background-color: white;
+  padding: .5rem;
+}
+
+a:hover{
+  color: orange;
+}
+
+p{
+  line-height: 1.5;
+  max-width: 45rem;
+}
+
+.main-container{
+  margin: 1rem;
+  padding: 1rem;
+}
+
+
+
+/*video information*/
+#myVideo{
+  height: 80vh;
+  text-align: center;
+  padding: 1rem;
+}
+
+#myBtn {
+  background: #fff;
+  padding: 1rem;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-family: monospace;
+
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+/*end video information*/
+
+.begin{
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+}
+
+.button{
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#sun{
+  background: rgb(63,214,251);
+  background: radial-gradient(circle, rgba(63,214,251,1) 0%, rgba(252,248,70,0.25442051820728295) 100%);
+}
