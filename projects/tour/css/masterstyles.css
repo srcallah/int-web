@@ -74,8 +74,3 @@ p{
   padding: 1rem;
   margin: 1rem;
 }
-
-#sun{
-  background: rgb(63,214,251);
-  background: radial-gradient(circle, rgba(63,214,251,1) 0%, rgba(252,248,70,0.25442051820728295) 100%);
-}
