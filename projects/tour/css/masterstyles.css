@@ -7,38 +7,63 @@ body{
   margin: .5rem;
   font-family: monospace;
   color: black;
+  font-size: 1.15rem;
 }
 
 div{
-  background-color: white;
 }
 
 
-h1{
+h1, h3{
   font-family: serif;
   font-weight: 200;
 }
 
 a{
-  color: black;
-  background-color: white;
+  color: #12ad8d;
   padding: .5rem;
 }
 
 a:hover{
-  color: orange;
+  color: #074e40;
 }
 
 p{
-  line-height: 1.5;
+  line-height: 1.75;
   max-width: 45rem;
 }
 
 .main-container{
   margin: 1rem;
   padding: 1rem;
+  max-width: 1024px;
 }
 
+.spacer{
+  height: 3rem;
+}
+
+.sticky{
+  position: fixed;
+  top: .25rem;
+  z-index: 100;
+  color: black;
+  mix-blend-mode: difference;
+}
+
+nav{
+  position: fixed;
+  bottom: .25rem;
+  z-index: 100;
+  color: black;
+  mix-blend-mode: difference;
+}
+
+.begin{
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+}
 
 
 /*video information*/
@@ -64,13 +89,33 @@ p{
 }
 /*end video information*/
 
-.begin{
-  margin: 0 auto;
-  padding: 0 auto;
-  text-align: center;
+
+/*panormic images*/
+.pan{
+  position: relative;
+}
+.pan img{
+  opacity: .7;
 }
 
-.button{
-  padding: 1rem;
-  margin: 1rem;
+.skew-far-left{
+  transform: skewY(-10deg);
+
+}
+
+.skew-left{
+    transform: skewY(-5deg);
+}
+
+.one{
+  position: absolute;
+  top: 10em;
+  left: 0;
+}
+
+.two{
+  position: absolute;
+  top: 11em;
+  left: 10em;
+  z-index: 10;
 }
