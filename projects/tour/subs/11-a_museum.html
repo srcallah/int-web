@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="images/icon.png"/>
     <link rel="stylesheet" href="../css/masterstyles.css">
     <link rel="stylesheet" href="../css/museumpaths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
 
 
   </head>
@@ -14,19 +15,25 @@
     <div class="sticky">
       <a href="../index.html">Home</a>,&nbsp;<a href="abc.html">Choose a different path</a>
     </div>
-    <div class="pan">
-      <img src="../img/11-museum/IMG_5182.JPG" alt="Leaving the Savin Rock Trail, walking toward the shore" class="one skew-far-left">
-      <img src="../img/11-museum/IMG_5180.JPG" alt="Continue walking on the trail towards the beach" class="two">
-      <img src="../img/11-museum/IMG_5179.JPG" alt="Continue on Savin Rock Trail toward the beach" class="three skew-far-left">
-      <a href="12-a_museum.html"><img src="../img/11-museum/IMG_5176.JPG" alt="Savin Rock Trail path curves to the right and overlooks the sea" class="four skew-far-left"></a>
-      <img src="../img/11-museum/IMG_5174.JPG" alt="Savin Rock Trail path curves to the right and overlooks the sea" class="five skew-far-left">
-      <img src="../img/11-museum/IMG_5172.JPG" alt="Savin Rock Trail path curves to the right and overlooks the sea" class="six skew-far-left">
-      <img src="../img/11-museum/IMG_5170.JPG" alt="Savin Rock Trail path curves to the right and overlooks the sea" class="seven skew-far-left">
-
-
-
+    <div class="pan" id="canvas">
+      <img src="../img/11-museum/IMG_5182.JPG" alt="Leaving the Savin Rock Trail, walking toward the shore" class="one skew-far-left image">
+      <img src="../img/11-museum/IMG_5180.JPG" alt="Continue walking on the trail towards the beach" class="two image">
+      <img src="../img/11-museum/IMG_5179.JPG" alt="Continue on Savin Rock Trail toward the beach" class="three skew-far-left image">
+      <a href="12-a_museum.html"><img src="../img/11-museum/IMG_5176.JPG" alt="Savin Rock Trail path curves to the right and overlooks the sea" class="four skew-far-left image"></a>
+      <img src="../img/11-museum/IMG_5174.JPG" alt="Savin Rock Trail path curves to the right and overlooks the sea" class="five skew-far-left image">
+      <img src="../img/11-museum/IMG_5172.JPG" alt="Savin Rock Trail path curves to the right and overlooks the sea" class="six skew-far-left image">
+      <img src="../img/11-museum/IMG_5170.JPG" alt="Savin Rock Trail path curves to the right and overlooks the sea" class="seven skew-far-left image">
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+    //draggable command
+    $(function(){
+      $("#canvas .image").draggable();
+    });
+    </script>
 
   </body>
 </html>

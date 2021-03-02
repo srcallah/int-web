@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" href="images/icon.png"/>
     <link rel="stylesheet" href="../css/masterstyles.css">
     <link rel="stylesheet" href="../css/museumpaths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+
 
 
   </head>
@@ -14,22 +16,29 @@
     <div class="sticky">
       <a href="../index.html">Home</a>,&nbsp;<a href="abc.html">Choose a different path</a>
     </div>
-    <div class="pan">
-      <img src="../img/12-museum/IMG_5184.JPG" alt="The shore of Savin Rock Beach" class="one skew-far-left">
-      <img src="../img/12-museum/IMG_5185.JPG" alt="The shore of Savin Rock Beach" class="two">
-      <img src="../img/12-museum/IMG_5186.JPG" alt="The shore of Savin Rock Beach" class="three skew-far-left">
-      <img src="../img/12-museum/IMG_5187.JPG" alt="The shore of Savin Rock Beach" class="four skew-far-left">
-      <img src="../img/12-museum/IMG_5188.JPG" alt="The shore of Savin Rock Beach" class="five skew-far-left">
-      <img src="../img/12-museum/IMG_5189.JPG" alt="The shore of Savin Rock Beach" class="six skew-far-left">
-      <img src="../img/12-museum/IMG_5190.JPG" alt="The shore of Savin Rock Beach" class="seven skew-far-left">
-      <img src="../img/12-museum/IMG_5191.JPG" alt="The shore of Savin Rock Beach" class="eight skew-far-left">
-      <img src="../img/12-museum/IMG_5192.JPG" alt="The shore of Savin Rock Beach" class="nine skew-far-left">
+    <div class="pan" id="canvas">
+      <img src="../img/12-museum/IMG_5184.JPG" alt="The shore of Savin Rock Beach" class="one skew-far-left image">
+      <img src="../img/12-museum/IMG_5185.JPG" alt="The shore of Savin Rock Beach" class="two image">
+      <img src="../img/12-museum/IMG_5186.JPG" alt="The shore of Savin Rock Beach" class="three skew-far-left image">
+      <img src="../img/12-museum/IMG_5187.JPG" alt="The shore of Savin Rock Beach" class="four skew-far-left image">
+      <img src="../img/12-museum/IMG_5188.JPG" alt="The shore of Savin Rock Beach" class="five skew-far-left image">
+      <img src="../img/12-museum/IMG_5189.JPG" alt="The shore of Savin Rock Beach" class="six skew-far-left image">
+      <img src="../img/12-museum/IMG_5190.JPG" alt="The shore of Savin Rock Beach" class="seven skew-far-left image">
+      <img src="../img/12-museum/IMG_5191.JPG" alt="The shore of Savin Rock Beach" class="eight skew-far-left image">
+      <img src="../img/12-museum/IMG_5192.JPG" alt="The shore of Savin Rock Beach" class="nine skew-far-left image">
 
       <nav><a href="../index.html">It's cold, I think I'll head home now.</a>
       </nav>
-
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
+    <script type="text/javascript">
+    //draggable command
+    $(function(){
+      $("#canvas .image").draggable();
+    });
+    </script>
   </body>
 </html>

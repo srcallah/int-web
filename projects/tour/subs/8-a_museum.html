@@ -7,18 +7,26 @@
     <link rel="icon" type="image/png" href="images/icon.png"/>
     <link rel="stylesheet" href="../css/masterstyles.css">
     <link rel="stylesheet" href="../css/museumpaths.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
   </head>
   <body>
     <div class="sticky">
       <a href="../index.html">Home</a>,&nbsp;<a href="abc.html">Choose a different path</a>
     </div>
-    <div class="pan">
-      <img src="../img/8-museum/IMG_4850.JPG" alt="Inside gazebo, facing trail" class="one skew-far-left">
-      <a href="9-a_museum.html"><img src="../img/8-museum/IMG_4846.JPG" alt="Leave the gazebo and continue on trail towards the beach" class="two"></a>
-      <img src="../img/8-museum/IMG_4843.JPG" alt="Inside gazebo, facing trail" class="three skew-right">
-
+    <div class="pan" id="canvas">
+      <img src="../img/8-museum/IMG_4850.JPG" alt="Inside gazebo, facing trail" class="one skew-far-left image">
+      <a href="9-a_museum.html"><img src="../img/8-museum/IMG_4846.JPG" alt="Leave the gazebo and continue on trail towards the beach" class="two image"></a>
+      <img src="../img/8-museum/IMG_4843.JPG" alt="Inside gazebo, facing trail" class="three skew-right image">
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+    //draggable command
+    $(function(){
+      $("#canvas .image").draggable();
+    });
+    </script>
 
 
   </body>
