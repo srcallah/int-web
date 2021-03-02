@@ -1,0 +1,30 @@
+body{
+  margin: 3rem;
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 2rem;
+}
+
+div h1{
+  text-align: center;
+  font-family: linotype-sabon, cursive;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+div p{
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  text-align: center;
+  font-family: linotype-sabon, serif;
+  font-weight: normal;
+  font-size: 15pt;
+  line-height: 2;
+
+  max-width: 800px;
+}
+
+.flower-box{
+
+}

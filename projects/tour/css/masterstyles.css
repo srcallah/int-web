@@ -15,6 +15,10 @@ h1, h3{
   font-weight: 200;
 }
 
+h1{
+  font-size: 36pt;
+}
+
 a{
   color: magenta;
   padding: .5rem;
@@ -32,30 +36,77 @@ a:visited{
 
 p{
   line-height: 1.75;
-  max-width: 45rem;
-}
-
-.main-container{
-  margin: 1rem;
-  padding: 1rem;
-  max-width: 1024px;
-}
-
-.spacer{
-  height: 3rem;
-}
-
-.sticky{
-  position: fixed;
-  top: .25rem;
-  z-index: 100;
-  color: black;
-  mix-blend-mode: difference;
 }
 
 nav{
   position: fixed;
   bottom: .25rem;
+  z-index: 100;
+  color: black;
+  mix-blend-mode: difference;
+}
+
+.main-container{
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.starting-point{
+  display: grid;
+  grid-template-columns: 1fr 16fr;
+  grid-column-gap: 2rem;
+}
+
+.abc{
+  position: relative;
+  text-align: center;
+}
+
+.overlay:hover + .hide {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size: 72pt;
+  text-align: center;
+  z-index: 100;
+  font-family: serif;
+  color: green;
+  mix-blend-mode: difference;
+}
+
+.behind{
+  z-index: -100;
+}
+
+.hide{
+  display: none;
+}
+
+.starting-point .abc p{
+  text-align: center;
+  font-family: serif;
+  font-size: 10pt;
+  color: green;
+}
+
+.uc{
+  margin: 0 auto;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+}
+
+.spacer{
+  display: block;
+  height: 10rem;
+}
+
+.sticky{
+  position: fixed;
+  top: .25rem;
   z-index: 100;
   color: black;
   mix-blend-mode: difference;
@@ -98,10 +149,6 @@ nav{
 }
 .pan img {
   opacity: .7;
-}
-
-.pan a img{
-    transition: transform 1s;
 }
 
 .pan a img:hover{

@@ -7,18 +7,29 @@
     <link rel="icon" type="image/png" href="images/icon.png"/>
     <link rel="stylesheet" href="../css/masterstyles.css">
     <link rel="stylesheet" href="../css/museumpaths.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+
 
   </head>
   <body>
     <div class="sticky">
       <a href="../index.html">Home</a>,&nbsp;<a href="abc.html">Choose a different path</a>
     </div>
-    <div class="pan">
-      <img src="../img/2-museum/IMG_4482_1.JPG" alt="stairway to Savin Rock Trail" class="one skew-far-left">
-      <a href="3-a_museum.html"><img src="../img/2-museum/IMG_4485_2.JPG" alt="stairway to Savin Rock Trail" class="two"></a>
-      <img src="../img/2-museum/IMG_4487_3.JPG" alt="stairway to Savin Rock Trail" class="three">
-      <img src="../img/2-museum/IMG_4491_4.JPG" alt="stairway to Savin Rock Trail" class="four skew-far-left">
+    <div class="pan" id="canvas">
+      <img src="../img/2-museum/IMG_4482_1.JPG" alt="stairway to Savin Rock Trail" class="one skew-far-left image">
+      <a href="3-a_museum.html"><img src="../img/2-museum/IMG_4485_2.JPG" alt="stairway to Savin Rock Trail" class="two image"></a>
+      <img src="../img/2-museum/IMG_4487_3.JPG" alt="stairway to Savin Rock Trail" class="three image">
+      <img src="../img/2-museum/IMG_4491_4.JPG" alt="stairway to Savin Rock Trail" class="four skew-far-left image">
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+    //draggable command
+    $(function(){
+      $("#canvas .image").draggable();
+    });
+    </script>
 
   </body>
 </html>
