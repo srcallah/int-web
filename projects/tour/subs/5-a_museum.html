@@ -14,14 +14,24 @@
     <div class="sticky">
       <a href="../index.html">Home</a>,&nbsp;<a href="abc.html">Choose a different path</a>
     </div>
-    <div class="pan">
-      <img src="../img/5-museum/IMG_4709_1.JPG" alt="Savin Rock Trail, past conference center" class="one skew-far-left">
-      <img src="../img/5-museum/IMG_4711_2.JPG" alt="Savin Rock Trail, past conference center" class="two skew-far-left">
-      <img src="../img/5-museum/IMG_4713_3.JPG" alt="Savin Rock Trail, past conference center" class="three">
-      <img src="../img/5-museum/IMG_4715_4.JPG" alt="Savin Rock Trail, past conference center" class="four">
-      <a href="6-a_museum.html"><img src="../img/5-museum/IMG_4718_6.JPG" alt="Continue on Savin Rock Trail towards gazebo" class="five skew-far-left"></a>
-      <img src="../img/5-museum/IMG_4721_7.JPG" alt="Savin Rock Trail, past conference center" class="six">
-      <img src="../img/5-museum/IMG_4723_8.JPG" alt="Savin Rock Trail, past conference center" class="seven skew-far-right">
+    <div class="pan" id="canvas">
+      <img src="../img/5-museum/IMG_4709_1.JPG" alt="Savin Rock Trail, past conference center" class="one skew-far-left image">
+      <img src="../img/5-museum/IMG_4711_2.JPG" alt="Savin Rock Trail, past conference center" class="two skew-far-left image">
+      <img src="../img/5-museum/IMG_4713_3.JPG" alt="Savin Rock Trail, past conference center" class="three image">
+      <img src="../img/5-museum/IMG_4715_4.JPG" alt="Savin Rock Trail, past conference center" class="four image">
+      <a href="6-a_museum.html"><img src="../img/5-museum/IMG_4718_6.JPG" alt="Continue on Savin Rock Trail towards gazebo" class="five skew-far-left image"></a>
+      <img src="../img/5-museum/IMG_4721_7.JPG" alt="Savin Rock Trail, past conference center" class="six image">
+      <img src="../img/5-museum/IMG_4723_8.JPG" alt="Savin Rock Trail, past conference center" class="seven skew-far-right image">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+      <script type="text/javascript">
+      //draggable command
+      $(function(){
+        $("#canvas .image").draggable();
+      });
+      </script>
 
     </div>
   </body>

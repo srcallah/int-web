@@ -15,12 +15,22 @@
     <div class="sticky">
       <a href="../index.html">Home</a>,&nbsp;<a href="abc.html">Choose a different path</a>
     </div>
-    <div class="pan">
-      <img src="../img/4-museum/IMG_4614_1.JPG" alt="path from stairway onto Savin Rock Trail, overlooking shore" class="one skew-far-left">
-      <img src="../img/4-museum/IMG_4616_2.JPG" alt="path from stairway onto Savin Rock Trail, overlooking shore" class="two ">
-      <a href="5-a_museum.html"><img src="../img/4-museum/IMG_4618_3.JPG" alt="path from stairway onto Savin Rock Trail, overlooking shore" class="three "></a>
-      <img src="../img/4-museum/IMG_4621_4.JPG" alt="path from stairway onto Savin Rock Trail, overlooking shore" class="four skew-far-right">
+    <div class="pan" id="canvas">
+      <img src="../img/4-museum/IMG_4614_1.JPG" alt="path from stairway onto Savin Rock Trail, overlooking shore" class="one skew-far-left image">
+      <img src="../img/4-museum/IMG_4616_2.JPG" alt="path from stairway onto Savin Rock Trail, overlooking shore" class="two image">
+      <a href="5-a_museum.html"><img src="../img/4-museum/IMG_4618_3.JPG" alt="path from stairway onto Savin Rock Trail, overlooking shore" class="three image"></a>
+      <img src="../img/4-museum/IMG_4621_4.JPG" alt="path from stairway onto Savin Rock Trail, overlooking shore" class="four skew-far-right image">
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+    //draggable command
+    $(function(){
+      $("#canvas .image").draggable();
+    });
+    </script>
+
 
 
   </body>
