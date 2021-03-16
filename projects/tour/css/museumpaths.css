@@ -66,3 +66,19 @@ top: 45em;
 left:120em;
 z-index: 30;
 }
+
+.poem{
+  position: absolute;
+  top: 20rem;
+  left: 40rem;
+  color:white;
+  z-index: -100;
+}
+
+.poem2{
+  position: absolute;
+  top: 15rem;
+  left: 38rem;
+  color:white;
+  z-index: -100;
+}
