@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+h1{
+  margin: 0;
+
+}
+
+.container{
+  background-color: #FFFaeb;
+  margin: 2em auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 90%;
+  height: 900px;
+}
+
+.image{
+  width: 60%;
+  height: 100%;
+  background-size: contain;
+  background-image: url("img/tree.jpg");
+}
+
+.sidebar{
+  width: 35%;
+}
+
+.month{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  height: 30%;
+}
+
+.month-grid{
+  margin-top: 2rem;
+}
+
+.day-names, .week1, .week2, .week3, .week4, .week5{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-bottom: 2px solid red;
+  padding: 1rem;
+  text-align: center;
+}
+
+.day-names{
+  text-align: center;
+}
+
+.days:hover{
+  background-color: snow;
+  border-radius: 50%;
+
+}

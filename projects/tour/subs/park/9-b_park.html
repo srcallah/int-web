@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>A tour of Savin Rock Trail</title>
+      <link rel="icon" type="image/png" href="images/icon.png"/>
+      <link rel="stylesheet" href="../../css/masterstyles.css">
+      <link rel="stylesheet" href="../../css/museumpaths.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    </head>
+    <body>
+      <div class="sticky">
+        <a href="../index.html">Home</a>,&nbsp;<a href="abc.html">Choose a different path</a>
+      </div>
+      <div class="wrap">
+        <div class="pan" id="canvas">
+          <img src="../../img/9-park/IMG_6112.JPG" alt="alt" class="one skew-left image">
+          <img src="../../img/9-park/IMG_6116.JPG" alt="alt" class="two skew-left image">
+          <a href="10-b_park.html"><img src="../../img/9-park/IMG_6117.JPG" alt="alt" class="three image"></a>
+          <img src="../../img/9-park/IMG_6118.JPG" alt="alt" class="four image">
+          <img src="../../img/9-park/IMG_6119.JPG" alt="alt" class="five skew-right image">
+          <img src="../../img/9-park/IMG_6120.JPG" alt="alt" class="six skew-right image">
+        </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+      <script type="text/javascript">
+      //draggable command
+      $(function(){
+        $("#canvas .image").draggable();
+      });
+      </script>
+
+  </body>
+</html>
