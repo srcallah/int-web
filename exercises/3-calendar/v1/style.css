@@ -31,7 +31,8 @@ h1{
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/tree.jpg");
+  background-image: url("../img/reflect.jpg");
+  background-position: center;
 }
 
 .sidebar{
@@ -76,4 +77,8 @@ h1{
 
 .past-month{
   opacity: .3;
+}
+
+#labor-day:hover{
+  cursor: url('../img/hammer.png'), auto;	
 }
