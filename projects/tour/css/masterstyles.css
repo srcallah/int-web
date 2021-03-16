@@ -138,6 +138,22 @@ nav a{
   text-align: center;
 }
 
+.poem{
+  position: absolute;
+  top: 20rem;
+  left: 40rem;
+  color:white;
+  z-index: -100;
+}
+
+.poem2{
+  position: absolute;
+  top: 15rem;
+  left: 38rem;
+  color:white;
+  z-index: -100;
+}
+
 
 /*video information*/
 #myVideo{
