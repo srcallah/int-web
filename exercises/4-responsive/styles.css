@@ -1,34 +1,51 @@
 body{
   box-sizing: border-box;
   margin: 0 auto;
+  padding: 1rem;
   font-size: 1rem;
-  font-family: monospace;
+  font-family: serif;
+  line-height: 1.5;
   background-color: snow;
   text-align: center;
 }
 
 h1{
-  font-size: 12pt;
+  font-size: 1rem;
   font-weight: 100;
 }
 
 .emoji{
-  height: 30px;
+  height: 25px;
+  padding: 1.5rem 3rem 1.5rem 3rem;
 }
+
+
 
 @media all and (max-width: 640px){
   .container{
     display: block;
-    background-color: yellow;
+    padding: 1rem;
+    transition: 0.5s;
+  }
+
+  .item{
+    padding: 0 2rem;
+  }
+
+  .item p{
+    display: none;
+  }
+
+  .item-7, .item-9, .item-10, .item-11, .item-12, .item-13, .item-14, .item-15{
+    display: none;
   }
 }
 
 @media all and (min-width: 641px){
-  .item-9, .item-10{
-    display: none;
-  }
+
   .container{
     display: grid;
+
     grid-template-areas:
     "header header"
     "item2 item8"
@@ -36,16 +53,40 @@ h1{
     "item4 item8"
     "item5 item8"
     "item6 item8"
-    "item7 item8";
+    "item7 item8"
+    "item9 item8"
+    "item10 item8"
+    "item11 item8"
+    "item12 item8"
+    "item13 item8"
+    "item14 item8"
+    "item15 item8"
+    "item16 item8"
+    "item17 item8"
+    "item18 item8"
+    ;
+    border: .5px solid black;
+
   }
   .item{
-    background-color: pink;
-    padding: .5rem;
-    margin: .5rem;
+    background-color: snow;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item p{
+    display: none;
+  }
+
+  .item-7, .item-9, .item-10, .item-11, .item-12, .item-13, .item-14, .item-15{
+    display: none;
   }
 
   .item-1{
     grid-area: header;
+    border-bottom: .5px solid black;
   }
   .item-2{
     grid-area: item2;
@@ -67,53 +108,116 @@ h1{
   }
   .item-8{
     grid-area: item8;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: .5px solid black;
   }
-
   .item-9{
     grid-area: item9;
   }
-
   .item-10{
     grid-area: item10;
+  }
+
+  .item-11{
+    grid-area: item11;
+  }
+
+  .item-12{
+    grid-area: item12;
+  }
+
+  .item-13{
+    grid-area: item13;
+  }
+
+  .item-14{
+    grid-area: item14;
+  }
+
+  .item-15{
+    grid-area: item15;
+  }
+
+  .item-16{
+    grid-area: item16;
+  }
+
+  .item-17{
+    grid-area: item17;
+  }
+
+  .item-18{
+    grid-area: item18;
   }
   }
 
   @media all and (min-width: 960px){
-    body{
-      background-color: cyan;
-    }
 
-    .item-9, .item-10{
-      display: grid;
-    }
 
     .container{
       display: grid;
       grid-template-areas:
-      "header header header header header"
-      ". . item2 . ."
-      ". item3 item2 item4 ."
-      "item5 item5 item8 item7 item7"
-      ". item6 item9 item10 ."
-      ". . item9 . ."
+      "header header header header"
+      "item18 item2 item3 item4"
+      "item5 item6 item7 item17"
+      "item9 item10 item11 item12"
+      "item13 item14 item15 item16"
+      "item8 item8 item8 item8";
+      grid-template-rows: repeat(6 1fr);
+      grid-template-columns: repeat(6 1fr);
+    }
+
+    .item{
+      display: grid;
+    }
+
+    .item p{
+      display: block;
+      text-align: center;
+      padding: 0;
+    }
+
+    .emoji{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    }
+
+    .item-8{
+      border-left: 0px solid black;
     }
 
   }
 
   @media all and (min-width: 1280px){
-    body{
-      background-color: yellow;
+    .container{
+      display: block;
+      position: relative;
+      border: 0px;
+    }
+    .item{
+      border: 0px;
     }
 
-    .container{
-      position: relative;
+    .item-1{
+      position: fixed;
+      top: 0px;
+      background-color: snow;
+      text-align: center;
+    }
+
+    .item-8{
+      position: fixed;
+      background-color: snow;
+      bottom: 0px;
     }
 
     .item-2{
       position: absolute;
-      top: 10px;
-      left: 40px;
-      background-color: blue;
+      bottom: 200px;
     }
 
-  }
+    }
