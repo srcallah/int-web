@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "quarters",
+  "version": "1.0",
+  "description": "25 cents per minute",
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["script.js"]
+  }],
+  "chrome_url_overrides" : {
+  "newtab": "index.html"
+  },
+
+  "permissions": [
+    "storage"
+  ]
+}

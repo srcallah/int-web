@@ -1,0 +1,129 @@
+/* CSS files add styling rules to your content */
+
+body {
+  background-color: snow;
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em auto;
+  min-height: 1000px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 6rem auto;
+  border: 2px solid blue;
+  border-radius: 0px;
+  padding: 2rem;
+  max-width: 600px;
+}
+
+
+h1 {
+  letter-spacing: .5px;
+  font-weight: 200;
+  color: black;
+  text-align: center;
+  font-family:serif;
+}
+
+h2{
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  font-weight: 100;
+}
+
+h3{
+  font-size: 4rem;
+  text-align: center;
+}
+
+.button-container{
+margin: 0 auto;
+text-align:center;
+}
+
+button{
+  width: 110px;
+  margin: .5rem 2rem;
+  padding: .75rem;
+  border: 0px;
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+}
+
+time{
+  text-align: center;
+}
+
+.time-card{
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 3fr 1fr 1fr 2fr 2fr;
+  background-color: pink;
+  border-collapse: collapse;
+  border: 1px solid blue;
+  font: 11pt serif;
+  width: 90%;
+}
+
+.header{
+  margin: .5rem;
+  padding: .5rem;
+  border-bottom: 2.5px solid  blue;
+  color: blue;
+}
+
+.cell-a{
+  padding: .25rem;
+  background-color: blue;
+  color: pink;
+  text-align: center;
+}
+
+.cell-b{
+  padding: .25rem;
+  background-color: pink;
+  color: blue;
+  text-align: center;
+
+}
+
+.column-one, .column-two, .column-three, .column-four{
+  border-right: 1px solid blue;
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-family: serif;
+  top: 1rem;
+  right: 1rem;
+  height: 30px;
+  width: 30px;
+  padding: .25px;
+  border: 2px solid blue;
+  border-radius: 50%;
+  color: blue;
+}
+
+#infoBox{
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+  color: blue;
+  font-family: serif;
+  font-size: 14pt;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+.download-link{
+  font-size: 14pt;
+  font-family: serif;
+  margin: 0 auto;
+  text-align: center;
+}
