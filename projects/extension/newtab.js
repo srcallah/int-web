@@ -5,7 +5,9 @@ var h3 = document.getElementsByTagName('h3')[0],
     t,
     timestamp,
     x = document.getElementById('infoBox'),
-    clockin = document.getElementById('clockin');
+    clockin = document.getElementById('clockin'),
+    z = document.getElementById('installGuide'),
+    installopen = document.getElementById('installopen');
 
 
 function add() {
@@ -46,5 +48,13 @@ clockin.onclick = function(){
     x.style.display = "block";
   } else {
     x.style.display = "none";
+  }
+}
+
+installOpen.onclick = function(){
+  if (z.style.display === "none") {
+    z.style.display = "block";
+  } else {
+    z.style.display = "none";
   }
 }

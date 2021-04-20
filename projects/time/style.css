@@ -1,0 +1,70 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.container-left {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+
+    background: linear-gradient(180deg, #8ca0b1, #b9bfc3, #ffd080, #f89e3e, #f79d7a, #f1cfcb, #dfdadf, #92bff9, #69aff9, #802a2e, #E0CB83, #E39241, #D9796A, #C8A5C0, #A18DC1, #5E4A88, #433A86, #2D1A45, #120b1c);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: WesternHemisphere 1000s ease infinite;
+    -moz-animation: WesternHemisphere 1000s ease infinite;
+    animation: WesternHemisphere 1000s ease infinite;
+}
+
+@-webkit-keyframes WesternHemisphere {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+@-moz-keyframes WesternHemisphere {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+@keyframes WesternHemisphere {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+
+
+.container-right{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+    background: linear-gradient(180deg, #8ca0b1, #fff);
+    background-size: 1400% 1400%;
+
+    -webkit-animation: EasternHemisphere 9s ease infinite;
+    -moz-animation: EasternHemisphere 9s ease infinite;
+    animation: EasternHemisphere 9s ease infinite;
+}
+
+@-webkit-keyframes EasternHemisphere {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+@-moz-keyframes EasternHemisphere {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+@keyframes EasternHemisphere {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}

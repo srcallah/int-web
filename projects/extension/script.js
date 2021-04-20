@@ -13,7 +13,7 @@ var loadTime,
     var xy = getRandomPosition(quarter);
     quarter.style.top = xy[0] + 'px';
     quarter.style.left = xy[1] + 'px';
-  }, 1000);
+  }, 60000);
 
   }
 
