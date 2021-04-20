@@ -13,7 +13,7 @@ var loadTime,
     var xy = getRandomPosition(quarter);
     quarter.style.top = xy[0] + 'px';
     quarter.style.left = xy[1] + 'px';
-  }, 60000);
+  }, 120000);
 
   }
 
@@ -34,7 +34,7 @@ function getRandomPosition(element) {
   chrome.storage.local.get(['timestamp'], function(result) {
     console.log('Value currently is ' + result.timestamp);
     timestamp = parseInt(result.timestamp);
-    timeElapsed = (loadTime - timestamp)/1000;
+    timeElapsed = (loadTime - timestamp)/120000;
     console.log(timeElapsed);
     for (i=0;
     i<timeElapsed;
