@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Hershey";
+  src: url("../font/hershey.otf") format("otf");
+  src: url("../font/hershey.woff") format("woff");
+}
+
 *{
   box-sizing: border-box;
 }
@@ -10,20 +16,15 @@ html{
 body{
   display: block;
   margin: .5rem;
-  font-family: monospace;
   color: black;
   font-size: 1.1rem;
-
-}
-
-h1, h3{
-  font-family: serif;
-  font-weight: 100;
 }
 
 h1{
-  font-size: 32pt;
-  color: green;
+  font-size: 36pt;
+  color: olive;
+  letter-spacing: -1px;
+  font-family: "Hershey", sans-serif;
 }
 
 a{
@@ -32,8 +33,7 @@ a{
 }
 
 a:hover{
-  color: cyan;
-  cursor: crosshair;
+  cursor: pointer;
 }
 
 a:visited{
@@ -43,14 +43,6 @@ a:visited{
 
 p{
   line-height: 1.75;
-}
-
-nav{
-  margin-top: 1rem;
-  padding-bottom: .5rem;
-}
-nav a{
-  text-decoration: none;
 }
 
 .main-container{
@@ -66,6 +58,25 @@ nav a{
 
 .main-container a{
   display: block;
+}
+
+.vidbg{
+  z-index: -100;
+}
+.video-content {
+  position: fixed;
+  bottom: 30%;
+  width: 100%;
+  padding: 20px;
+}
+
+.video-content a{
+  background-color: white;
+  color: black;
+  padding: .75rem 2rem;
+  border-radius: 20px;
+  margin: 1rem;
+  text-decoration: none;
 }
 
 .abc{
@@ -132,48 +143,27 @@ nav a{
   mix-blend-mode: difference;
 }
 
-.begin{
-  margin: 0 auto;
-  padding: 0 auto;
-  text-align: center;
+video{
+position: fixed;
+font-family: "Hershey", sans-serif;
+right: 50;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
 }
-
-
-/*video information*/
-#myVideo{
-  height: 80vh;
-  text-align: center;
-  padding: 1rem;
-}
-
-#myBtn {
-  background: #fff;
-  padding: 1rem;
-  border: none;
-  color: #000;
-  cursor: pointer;
-  font-family: monospace;
-
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-/*end video information*/
 
 
 /*panormic images*/
 .pan{
   position: relative;
 }
+
 .pan img {
   opacity: .7;
 }
 
 .pan a img:hover{
   filter: saturate(200%);
-
 }
 
 .skew-far-left{
