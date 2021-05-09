@@ -2,9 +2,12 @@
 
 body {
   background-color: snow;
+  background-image: url('bgquarters.png');
+  background-position: bottom left;
+  background-repeat: no-repeat;
   font-family: helvetica, arial, sans-serif;
   margin: 2em auto;
-  min-height: 1000px;
+  height: 100vh;
 }
 
 .container{
@@ -15,6 +18,7 @@ body {
   border-radius: 0px;
   padding: 2rem;
   max-width: 600px;
+  border-radius: 20px;
 }
 
 
@@ -38,6 +42,12 @@ h3{
   text-align: center;
 }
 
+a{
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1rem;
+  color: blue;
+}
+
 .button-container{
 margin: 0 auto;
 text-align:center;
@@ -51,6 +61,7 @@ button{
   background-color: blue;
   color: white;
   font-size: 1rem;
+  border-radius: 20px;
 }
 
 time{
@@ -119,12 +130,13 @@ time{
 #infoBox{
   display: none;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   color: blue;
-  font-family: serif;
   font-size: 14pt;
+  line-height: 1.5;
   max-width: 600px;
   padding: 1rem;
+
 }
 
 
@@ -159,4 +171,5 @@ time{
   text-align: left;
   max-width: 600px;
   font-size: 1rem;
+  background-color: snow;
 }
