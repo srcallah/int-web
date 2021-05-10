@@ -149,6 +149,89 @@ p{
   height: 180px;
 }
 
+.blip{
+  height: 7px;
+  width: 7px;
+  background: green;
+  border-radius: 50%;
+}
+
+.urhere{
+  height: 7px;
+  width: 7px;
+  background: magenta;
+  border-radius: 50%;
+}
+
+#bone{
+  position: absolute;
+  right: 78px;
+  top: 10px;
+}
+
+#btwo{
+  position: absolute;
+  right: 40px;
+  top: 66px;
+}
+
+#bthree{
+  position: absolute;
+  right: 60px;
+  top: 30px
+}
+
+#bfour{
+  position: absolute;
+  right: 50px;
+  top: 37px
+}
+
+#bfive{
+  position: absolute;
+  right: 40px;
+  top: 37px
+}
+
+#bsix{
+  position: absolute;
+  right: 20px;
+  top: 39px
+}
+
+#bseven{
+  position: absolute;
+  right: 60px;
+  top: 82px
+}
+
+#beight{
+  position: absolute;
+  right: 60px;
+  top: 82px
+}
+
+#bnine{
+  position: absolute;
+  right: 60px;
+  top: 111px
+}
+
+#bten{
+  position: absolute;
+  right: 80px;
+  top: 105px
+}
+
+#beleven{
+  position: absolute;
+  right: 80px;
+  top: 105px
+}
+
+
+
+
 
 video{
 position: fixed;
@@ -203,5 +286,5 @@ min-height: 100%;
 .essay{
   margin: 0 auto;
   padding: 4rem;
-  max-width: 600px;
+  max-width: 640px;
 }
