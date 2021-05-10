@@ -1,0 +1,67 @@
+html {
+	text-align: center;
+	margin: 0;
+  padding: 0;
+  font-size: 24pt;
+  background: snow;
+}
+
+#clock {
+	text-align: justify;
+	display: inline-block;
+	padding: 2em;
+	margin: 3em;
+	font-family: serif;
+	word-spacing: 6em;
+	white-space: nowrap;
+}
+
+#clock > .word {
+	text-transform: lowercase;
+	font-size: 2em;
+	word-spacing: 0em;
+	opacity: 0;
+	transition: all 1s;
+}
+
+#clock > .word.on {
+	opacity: 1;
+  mix-blend-mode: difference;
+  color: grey;
+}
+
+#window1{
+  z-index: -10;
+  clip-path: polygon(20% 20%, 50% 0, 80% 20%, 100% 50%, 80% 80%, 50% 100%, 20% 80%, 0 50%);
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px; /* apply negative top and left margins to truly center the element */
+  width: 500px;
+  height: 500px;
+  animation-name: sunfall;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background: linear-gradient(180deg, skyblue, orange, pink, midnightblue);
+  background-size: 1800% 1800%;
+}
+
+
+/* @keyframes sunfall {
+   0% {background-color: skyblue; filter: blur(10px);}
+  50% {background-color: midnightblue; filter: blur(5px);}
+  100% {background-color: skyblue; filter: blur(10px);}
+} */
+
+@keyframes sunfall{
+    0%{background-position:0% 0%; filter:blur(90px);
+        clip-path: polygon(20% 20%, 50% 0, 80% 20%, 100% 50%, 80% 80%, 50% 100%, 20% 80%, 0 50%);
+}
+    50%{background-position:50% 100%; filter:blur(15px);}
+    100%{background-position:100% 100%; filter:blur(35px);
+         clip-path: polygon(40% 43%, 50% 0, 60% 43%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0 50%);
+
+;
+  }
+}
