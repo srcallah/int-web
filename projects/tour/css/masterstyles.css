@@ -51,6 +51,12 @@ p{
   font-weight: 100;
 }
 
+.howto{
+  font-style: italic;
+  color: green;
+  font-size: 10pt;
+}
+
 /* index styling */
 
 .button{
@@ -123,6 +129,18 @@ p{
   right: 20px;
 }
 
+#begin a{
+  animation-name: lightup;
+  animation-duration: 4s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes lightup{
+  from {color: black;}
+  to {color: magenta;}
+}
+
 
 .story-map-container{
   display: grid;
@@ -154,6 +172,8 @@ p{
   width: 7px;
   background: green;
   border-radius: 50%;
+  padding: 0;
+  margin: 0;
 }
 
 .urhere{
@@ -169,28 +189,30 @@ p{
   top: 10px;
 }
 
+
+
 #btwo{
-  position: absolute;
-  right: 40px;
-  top: 66px;
-}
-
-#bthree{
-  position: absolute;
-  right: 60px;
-  top: 30px
-}
-
-#bfour{
   position: absolute;
   right: 50px;
   top: 37px
 }
 
-#bfive{
+#bthree{
   position: absolute;
   right: 40px;
   top: 37px
+}
+
+#bfour{
+  position: absolute;
+  right: 12px;
+  top: 56px
+}
+
+#bfive{
+  position: absolute;
+  right: 40px;
+  top: 64px;
 }
 
 #bsix{
@@ -201,8 +223,8 @@ p{
 
 #bseven{
   position: absolute;
-  right: 60px;
-  top: 82px
+  right: 50px;
+  top: 72px
 }
 
 #beight{
@@ -225,10 +247,39 @@ p{
 
 #beleven{
   position: absolute;
-  right: 80px;
-  top: 105px
+  right: 120px;
+  top: 126px;
 }
 
+#btwelve{
+  position: absolute;
+  right: 100px;
+  top: 115px;
+}
+
+#bthirteen{
+  position: absolute;
+  right: 120px;
+  top: 118px;
+}
+
+#bfourteen{
+  position: absolute;
+  right: 130px;
+  top: 130px;
+}
+
+#bfifteen{
+  position: absolute;
+  right: 150px;
+  top: 150px;
+}
+
+#bsixteen{
+  position: absolute;
+  right: 170px;
+  top: 167px;
+}
 
 
 
