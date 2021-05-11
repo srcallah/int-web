@@ -4,11 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>A tour of Savin Rock Trail</title>
-    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <link rel="icon" type="image/png" href="../img/spiralshell.png"/>
     <link rel="stylesheet" href="../css/masterstyles.css">
     <link rel="stylesheet" href="../css/museumpaths.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-
 
 
   </head>
@@ -16,14 +15,16 @@
     <div class="ocean">
       <h1 class="srb"><a href="../index.html">Savin Rock Beach</a></h1>
     <div>
-      <div class="pan" id="canvas">
-        <img src="../img/4-pier/IMG_5500.JPG" alt="Route C" class="two skew-left image">
-        <a href="14-a_museum.html"><img src="../img/4-pier/IMG_5524.JPG" alt="Savin Rock conference center parking lot" class="three image"></a>
-        <img src="../img/4-pier/IMG_5519.JPG" alt="Savin Rock conference center parking lot" class="four skew-right image">
-      </div>
+
+    <div class="pan" id="canvas">
+      <img src="../img/7-pier/IMG_5667.JPG" alt="Route C" class="one skew-far-left image">
+      <img src="../img/7-pier/IMG_5668.JPG" alt="Savin Rock conference center parking lot" class="two skew-left image">
+      <img src="../img/7-pier/IMG_5660.JPG" alt="Savin Rock conference center parking lot" class="three image">
+      <a href="15-a_museum.html"><img src="../img/7-pier/IMG_5661.JPG" alt="Savin Rock conference center parking lot" class="four skew-right image"></a>
+    </div>
     <div class="story-map-container">
       <div class="story-parts">
-        <h2>13/</h2>
+        <h2>14/</h2>
         <a href="essay.html">full essay</a>
       </div>
       <p>
@@ -42,22 +43,26 @@
         <div><a href="10-a_museum.html"  class="blip" id="bten"></a></div>
         <div><a href="11-a_museum.html"  class="blip" id="beleven"></a></div>
         <div><a href="12-a_museum.html"  class="blip" id="btwelve"></a></div>
-        <div><a href="13-a_museum.html"  class="blip urhere" id="bthirteen"></a></div>
-        <div><a href="14-a_museum.html"  class="blip" id="bfourteen"></a></div>
+        <div><a href="13-a_museum.html"  class="blip" id="bthirteen"></a></div>
+        <div><a href="14-a_museum.html"  class="blip urhere" id="bfourteen"></a></div>
         <div><a href="15-a_museum.html"  class="blip" id="bfifteen"></a></div>
-        <div><a href="16-a_museum.html"  class="blip" id="bsixteen"></a></div>
+        <div><a href="../index.html"  class="blip" id="bsixteen"></a></div>
       </div>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
     <script type="text/javascript">
     //draggable command
     $(function(){
       $("#canvas .image").draggable();
-    });
-    </script>
+      { grid: [ 50, 20 ] }}
+    );
+    $(function(){
+      $("#canvas .image").draggable();
+      { snap: true }}
+    );
 
+
+    </script>
   </body>
 </html>
