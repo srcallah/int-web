@@ -51,6 +51,12 @@ p{
   font-weight: 100;
 }
 
+.howto{
+  font-style: italic;
+  color: green;
+  font-size: 10pt;
+}
+
 /* index styling */
 
 .button{
@@ -86,14 +92,55 @@ p{
   font-family: "Times New Roman";
   font-weight: 100;
   top: 10px;
-  left: 35px;
+  left: 20px;
   mix-blend-mode: difference;
 }
 
 .srb a{
   text-decoration: none;
   cursor: pointer;
+  color: black;
 }
+
+.home-nav{
+  position: fixed;
+  z-index: 100;
+  font-family: "Times New Roman";
+  font-weight: 100;
+}
+
+.home-nav a{
+  color: black;
+  text-decoration: none;
+}
+
+#savin{
+  top: 20px;
+  left: 20px;
+}
+
+#info{
+  right: 20px;
+  top: 20px;
+}
+
+#begin{
+  bottom: 20px;
+  right: 20px;
+}
+
+#begin a{
+  animation-name: lightup;
+  animation-duration: 4s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes lightup{
+  from {color: black;}
+  to {color: magenta;}
+}
+
 
 .story-map-container{
   display: grid;
@@ -111,7 +158,6 @@ p{
 .map{
   position: relative;
   z-index: 110;
-
 }
 
 .map img{
@@ -121,10 +167,126 @@ p{
   height: 180px;
 }
 
+.blip{
+  height: 7px;
+  width: 7px;
+  background: green;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+.urhere{
+  height: 7px;
+  width: 7px;
+  background: magenta;
+  border-radius: 50%;
+}
+
+#bone{
+  position: absolute;
+  right: 78px;
+  top: 10px;
+}
+
+
+
+#btwo{
+  position: absolute;
+  right: 50px;
+  top: 37px
+}
+
+#bthree{
+  position: absolute;
+  right: 40px;
+  top: 37px
+}
+
+#bfour{
+  position: absolute;
+  right: 12px;
+  top: 56px
+}
+
+#bfive{
+  position: absolute;
+  right: 40px;
+  top: 64px;
+}
+
+#bsix{
+  position: absolute;
+  right: 20px;
+  top: 39px
+}
+
+#bseven{
+  position: absolute;
+  right: 50px;
+  top: 72px
+}
+
+#beight{
+  position: absolute;
+  right: 60px;
+  top: 82px
+}
+
+#bnine{
+  position: absolute;
+  right: 60px;
+  top: 111px
+}
+
+#bten{
+  position: absolute;
+  right: 80px;
+  top: 105px
+}
+
+#beleven{
+  position: absolute;
+  right: 120px;
+  top: 126px;
+}
+
+#btwelve{
+  position: absolute;
+  right: 100px;
+  top: 115px;
+}
+
+#bthirteen{
+  position: absolute;
+  right: 120px;
+  top: 118px;
+}
+
+#bfourteen{
+  position: absolute;
+  right: 130px;
+  top: 130px;
+}
+
+#bfifteen{
+  position: absolute;
+  right: 150px;
+  top: 150px;
+}
+
+#bsixteen{
+  position: absolute;
+  right: 170px;
+  top: 167px;
+}
+
+
+
 
 video{
 position: fixed;
-font-family: "Hershey", sans-serif;
+z-index: -100;
 right: 50;
 bottom: 0;
 min-width: 100%;
@@ -170,4 +332,10 @@ min-height: 100%;
   display: inline-block;
   padding: .5rem;
   opacity: .7;
+}
+
+.essay{
+  margin: 0 auto;
+  padding: 4rem;
+  max-width: 640px;
 }

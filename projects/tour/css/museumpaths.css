@@ -76,3 +76,38 @@ top: 25em;
 left:30em;
 z-index: 30;
 }
+
+.twelve{
+  position: absolute;
+  top: 40em;
+  left:70em;
+  z-index: 30;
+}
+
+.thirteen{
+  position: absolute;
+  top: 30em;
+  left: 40em;
+  z-index: 30;
+}
+
+.fourteen{
+  position: absolute;
+  left: 65em;
+  top: 25em;
+  z-index: 30;
+}
+
+.fifteen{
+  position: absolute;
+  left: 5em;
+  top: 30em;
+  z-index: 30;
+}
+
+.sixteen{
+  position: absolute;
+  left: 40em;
+  top: 10em;
+  z-index: 30;
+}
