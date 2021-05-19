@@ -1,3 +1,6 @@
+///////////~~~~~~~~~BLOSSOM BOOKMARKLET! Place this code in your Chrome Brower's Console and fire!~~~~~~~~~~~~~~~~~~/////////////
+
+
 javascript:(function(){
 
 var text = document.getElementsByTagName("div");
