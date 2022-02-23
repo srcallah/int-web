@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>document</title>
+    <script src="https://cdn.jsdelivr.net/gh/alvinashiatey/Sheets@latest/dist/sheets.umd.min.js"></script>
+
+  </head>
+  <body>
+    <div class="page">
+
+    </div>
+
+
+
+    <script>
+        const sheetID = "1F1nb0IVZg47Z79TuuugTdYKkwqkj8YZsdux7b0Ue8hY";
+        const page = document.querySelector(".page");
+        const sheet = new Sheets(sheetID);
+        sheet.getMyData().then(function (data){
+            const title = document.createElement("h1");
+            title.innerText = data["Header-Title"];
+            page.appendChild(title);
+
+            const description = document.createElement("p");
+            description.innerText = data["Meta-Description"];
+            page.appendChild(description);
+
+            // const collapsedRows = sheet.collapsedRows(
+            //     "UL-Date", 
+            //     "UL-Images", 
+            //     "UL-Project"
+            //     );
+
+            //     for (const row of collapsedRows) {
+            //         sheet.createElement({
+            //             tag: "ul",
+            //             children: [
+            //                 {tag: "h2", content: row["UL-Date"]},
+            //                 {tag: "p", content: row["UL-Project"]},
+            //                 {tag: "img", content: row["UL-Images"]},
+            //             ],
+            //         })
+            //     }
+            
+                // const ul = document.createElement("ul")
+                // for (const row of collapsedRows){
+                //     const li = document.createElement("li");
+                //     const p = document.createElement("p");
+                //     p.innerText = row["UL-Project"];
+                //     li.appendChild(p2);
+                //     ul.appendChild(li);
+                // };
+
+            // const about = document.createElement("p");
+            // about.innterText = data["About"];
+            // page.appendChild(about);
+            
+
+            for (let date of data["UL-Date"]) {
+                const p = document.createElement("p");
+                p.innerText = date;
+                page.appendChild(p);
+            }
+        });
+    </script>
+    
+  </body>
+</html>

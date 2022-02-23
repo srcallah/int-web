@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/gh/alvinashiatey/Sheets@latest/dist/sheets.umd.min.js"></script>
+    <title>Sheet Pages Tutorial</title>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+  <script defer>
+    let app = document.getElementById("app");
+    let s = new Sheets("1F1nb0IVZg47Z79TuuugTdYKkwqkj8YZsdux7b0Ue8hY");
+    s.getMyData().then((d) => {
+      // fetch for data in a specific row
+      let heading = s.getKey("Meta-Title");
+      // Create an element and append to selector
+      s.createElement({
+        tag: "h1",
+        content: heading,
+      }).appendTo("#app");
+      // Create an element and append to selector
+      let descriptions = s.getKey("Meta-Description");
+      s.createElement({
+        tag: "p",
+        content: descriptions,
+      }).appendTo("#app");
+      // Create an element and append to selector
+      let about = s.getKey("About");
+      s.createElement({
+        tag: "p",
+        content: about,
+      }).appendTo("#app");
+
+      // Collapse rows into an array of object for easy looping
+      let ul = s.collapseKeys("UL-Images", "UL-Project", "UL-Date");
+      for (let row of ul) {
+        s.createElement({
+          tag: "div",
+          children: [
+            {
+              tag: "p",
+              content: row["UL-Project"],
+            },
+            {
+              tag: "img",
+              attributes: {
+                src: row["UL-Images"],
+              },
+            },
+            {
+              tag: "p",
+              content: row["UL-Date"],
+            },
+          ],
+        }).appendTo("#app");
+      }
+    });
+  </script>
+</html>
+index.html
+Displaying index.html.
